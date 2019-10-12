@@ -10,7 +10,8 @@ def main():
     else:
         print("Procurando estados equivalentes...")
         alfabeto = auxList1[0]
-        Equivalent = eq.table_create(auxList1[3], alfabeto)
+        transicoes = auxList1[7:]
+        Equivalent = eq.table_create(auxList1[3], alfabeto, transicoes)
         if Equivalent == None:
             print("Nao foram encontrados estados equivalentes!")
         else:
