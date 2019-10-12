@@ -1,0 +1,20 @@
+DFA
+r b
+E
+s0 s1 s2 s3 s4 s5 s6
+s0
+s5 s6
+s0 r s1
+s0 b s2
+s1 r s3
+s1 b s4
+s2 r s3
+s2 b s5
+s3 r s3
+s3 b s6
+s4 r s3
+s4 b s6
+s5 r s3
+s5 b s2
+s6 r s3
+s6 b s6
