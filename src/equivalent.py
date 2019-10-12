@@ -1,9 +1,9 @@
 def table_create(lista, alfabeto):
     equiv = []
-    for a in alfabeto:
-        for n in lista[:(len(lista)-1)]:
-            for i in lista.reverse[1:]:
-            
+    
+    for n in lista[:(len(lista)-1)]:
+        for i in lista.reverse[1:]:
+            for a in alfabeto:
                 equiv.append(equivalent_match(n,i,a))
 
 
