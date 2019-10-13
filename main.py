@@ -16,12 +16,13 @@ def main():
         branco = auxList1[2]
         transicoes = auxList1[6:]
         estados = eq.unreachable_states(estados, estados_iniciais, transicoes)
-        Equivalent = eq.table_create(estados, alfabeto, transicoes)
+        Equivalent = eq.table_create(estados, alfabeto, transicoes, estados_finais)
         if Equivalent == None:
             print("Nao foram encontrados estados equivalentes!")
         else:
             print("Estados equivalentes encontrados:")
-            print(Equivalent)
+            for linha in Equivalent:
+                print(linha)
 
 
 if __name__ == "__main__":
