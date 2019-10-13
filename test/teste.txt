@@ -19,3 +19,4 @@ s5 b s2
 s6 r s3
 s6 b s6
 s7 r s7
+s7 b s1
