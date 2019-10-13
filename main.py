@@ -9,9 +9,14 @@ def main():
         print("\nNao foi possivel carregar o LFA!\nExecute o codigo novamente passando o txt correto por parametro.\n")
     else:
         print("Procurando estados equivalentes...")
-        alfabeto = auxList1[0]
-        transicoes = auxList1[7:]
-        Equivalent = eq.table_create(auxList1[3], alfabeto, transicoes)
+        alfabeto = auxList1[1]
+        estados = auxList1[3]
+        estados_finais = auxList1[5]
+        estados_iniciais = auxList1[4]
+        branco = auxList1[2]
+        transicoes = auxList1[6:]
+        estados = eq.unreachable_states(estados, estados_iniciais, transicoes)
+        Equivalent = eq.table_create(estados, alfabeto, transicoes)
         if Equivalent == None:
             print("Nao foram encontrados estados equivalentes!")
         else:
