@@ -1,0 +1,21 @@
+DFA
+a b c d
+E
+s0 s1 s4 s5 s2 s3
+s0
+s0 a s1s4
+s0 b s3
+s0 c s0
+s0 d s0
+s1s4 a s2s5
+s1s4 b s3
+s1s4 c s0
+s1s4 d s0
+s2s5 a s2s5
+s2s5 b s2s5
+s2s5 c s2s5
+s2s5 d s2s5
+s3 a s1s4
+s3 b s3
+s3 c s1s4
+s3 d s0
