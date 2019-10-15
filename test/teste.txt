@@ -1,7 +1,9 @@
 DFA
 r b
 E
-s0 s1 s2 s3 s4 s5 s6 s7 s8 
+s0 s6 s3 s1 s4 s5 s2
+s0
+ 
 s0
 s5 s6
 s0 r s1
