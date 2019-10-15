@@ -1,0 +1,18 @@
+DFA
+a b
+E
+sA sB sC sD sE sF
+sA
+sD sE sF
+sA a sB
+sA b sA
+sB a sC
+sB b sA
+sC a sD
+sC b sA
+sD a sD
+sD b sE
+sE a sF
+sE b sE
+sF a sD
+sF b sE
